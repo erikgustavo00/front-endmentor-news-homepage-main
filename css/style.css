@@ -3,13 +3,133 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-
+    
 }
-
+/*frenquents*/
 body,html{
     height: 100%;
     background-color: hsl(36, 100%, 99%);
 }
-header nav{
-    background-color: hsl(36, 100%, 99%);
+
+a {
+    text-decoration: none;
+    color:hsl(233, 8%, 79%);
 }
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-col{
+    display: flex;
+    flex-direction:column;
+}
+button{
+    width: 100%;
+    height:100%;
+    background-color:#f15d53 ;
+    border: none;
+    color:#ffe6dc ;
+    padding: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+} 
+.clear{
+    clear: both;
+}
+p{
+    color: hsl(233, 8%, 79%);
+    line-height: 28px;
+    font-size: 15px;
+}
+/* * */
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li{
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+ .main-wraper{
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 50px;
+}
+.section_1{
+    width: 75%;
+    height: 100%;    
+}
+picture img{
+    width: 100%;
+    height: 350px;
+}
+.content{
+    padding:35px 0 ;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+   
+}
+.title{
+    font-size:48px;
+    font-weight: 800px;
+    line-height: 75px;
+    width: 40%;
+}
+.article{
+    justify-content: space-between;
+    height: auto;
+    padding:0 55px ;
+    width: 45%;
+}
+.button{
+    width: 150px;
+    height: 50px;
+}
+ 
+aside{
+    padding: 0 2%;
+    width: 30%;
+    background-color:hsl(240, 100%, 5%) ;
+    color: hsl(36, 100%, 99%);
+    gap: 40px;
+}
+aside h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 38px;
+    margin: 15px 0 ;
+}
+aside .info{
+    
+}
+
+.line{
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: hsl(233, 8%, 79%);
+    
+    
+}
+
+
