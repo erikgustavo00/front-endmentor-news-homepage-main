@@ -30,85 +30,152 @@
   <header>
 
     <div class="container">
-      <nav >
+      <nav>
         <div class="logo">
-          <a href="#"><img class="center-align center" src="assets/images/logo.svg" alt="" srcset=""></a>
+          <a href="#"><img class="center-align center" src="assets/images/logo.svg" alt="logo"></a>
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href='#'>New</a></li>
-          <li><a href='#'>Popular</a></li>
-          <li><a href='#'>Trending</a></li>
-          <li><a href='#'>Categories</a></li>
-        </ul>
+        <!--logo-->
+        <div class="desktop_menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href='#'>New</a></li>
+            <li><a href='#'>Popular</a></li>
+            <li><a href='#'>Trending</a></li>
+            <li><a href='#'>Categories</a></li>
+          </ul>
+        </div>
+        <div class="mobile_menu">
+          <img src="assets/images/icon-menu.svg" alt="icone-menu">
+          <div class="menu">
+            <img src="assets/images/icon-menu-close.svg" alt="close-menu">
+            <ul class=" flex-col">
+              <li><a href="#">Home</a></li>
+              <li><a href='#'>New</a></li>
+              <li><a href='#'>Popular</a></li>
+              <li><a href='#'>Trending</a></li>
+              <li><a href='#'>Categories</a></li>
+            </ul>
+          </div><div class="clear"></div>
+        </div>
       </nav>
     </div>
+    <!--header container-->
 
   </header>
   <main>
     <div class="container">
       <div class="flex-row main-wraper w100">
-      <section class="section_1">
-        <picture>
-          <img src="assets/images/image-web-3-desktop.jpg" alt="image-web" srcset="">
-        </picture>
+        <section class="section_1 w50">
+          <picture>
+            <source media="(max-width: 638px)" srcset="assets/images/image-web-3-mobile.jpg">
+            <img src="assets/images/image-web-3-desktop.jpg" alt="image-web">
+            
+          </picture>
           <div class="content flex-row">
             <div class="title w50">
               <h1>The Bright Future of Web 3.0?</h1>
-          </div>
-          <div class="article  w50 flex-col">
-            <div>
-              <p>
-                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
-                of
-                the people.
-                But is it really fulfilling its promise?
-              </p></div>
-            <div class="button w50">
-              <button>Read more</button>
             </div>
+            <!--title-->
+            <div class="article  w50 flex-col">
+              <div>
+                <p>
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                  hands
+                  of
+                  the people.
+                  But is it really fulfilling its promise?
+                </p>
+              </div>
+              <div class="button">
+                <button>Read more</button>
+              </div>
+              <!--button-->
+            </div>
+            <!--article-->
+          </div>
+        </section>
+        <!--section 1 -->
+        <aside class="flex-col ">
+          <h2>New</h2>
+          <div class="info">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="line"></div>
+          <div class="info">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="line"></div>
+          <div class="info">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </aside>
+      </div>
+      <!--main wraper-->
+
+
+      <section class="section_2 flex-row w50">
+        <div>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="retro">
+          <div class="description">
+            <span>01</span>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
-      </section>
-      <aside class="flex-col">
-        <h2>New</h2>
-        <div class="info">
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <div>
+          <img src="./assets/images/image-top-laptops.jpg" alt="retro">
+          <div class="description">
+            <span>02</span>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
         </div>
-        <div class="line"></div>
-        <div class="info">
-        <h3>The Downsides of AI Artistry</h3>
-        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <div>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="retro">
+          <div class="description">
+            <span>03</span>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+
         </div>
-        <div class="line"></div>
-        <div class="info">
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </div>
-      </aside>
-    </div>
-    
-  
-      <section>
-        01
-        <h3>Reviving Retro PCs</h3>
-        <p>What happens when old PCs are given modern upgrades?</p>
-
-        02
-        <h3>Top 10 Laptops of 2022</h3>
-        <p>Our best picks for various needs and budgets.</p>
-
-        03
-        <h3>The Growth of Gaming</h3>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+        <div class="clear"></div>
       </section>
     </div>
+    <!--container-->
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/erikgustavo00" target="_blank">erik</a>.
   </div>
+  <script>
+  const menuIcon = document.querySelector('.mobile_menu img');
+    const menuMobile = document.querySelector('.mobile_menu div');
+    var p = document.querySelector('p');
+    var body = document.querySelector('body');
+    menuIcon.addEventListener('click', (e)=>{
+      menuMobile.classList.add('show_menu');
+      body.style.backgroundColor = 'rgba(0, 0, 0,0.8)';
+      body.style.overflow= 'hidden';
+      p.style.color = 'rgba(0, 0, 0,0.9)';
+    
+       
+    });
+
+    const menuClose = document.querySelector('.menu img');
+    menuClose.addEventListener('click', ()=>{
+      if(menuMobile.classList.contains('show_menu')){
+        menuMobile.classList.remove('show_menu');
+        body.style.backgroundColor = 'white';
+        body.style.overflow= 'auto';
+        p.style.color = '';
+      }
+    })
+
+  </script>
 </body>
 
 </html>

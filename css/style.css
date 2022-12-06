@@ -15,10 +15,12 @@ a {
     text-decoration: none;
     color:hsl(233, 8%, 79%);
 }
+
 .container{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 2%;
 }
 .w100{
     width: 100%;
@@ -44,16 +46,29 @@ button{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
+    cursor: pointer;
 } 
 .clear{
     clear: both;
 }
 p{
     color: hsl(233, 8%, 79%);
-    line-height: 28px;
+    line-height: 24px;
     font-size: 15px;
 }
+h3,h2{font-weight: 700;}
 /* * */
+/* hovers */
+
+header ul li a:hover{
+    color: hsl(35, 77%, 62%);
+}
+aside .info h3:hover{
+        color: hsl(35, 77%, 62%);
+}
+
+/***/
+/* header */
 header {
     width: 100%;
     padding: 20px 0;
@@ -68,10 +83,47 @@ header ul li{
     padding: 0 20px;
     
 }
+/* mobile */
+.mobile_menu {
+    display: none;
+}
+.mobile_menu .menu { 
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: hsl(36, 100%, 99%);
+    transition: 300ms;
+    
+    
+}
+.menu img{
+    position: relative;
+    left: 85%;
+    top: 10px;
+    margin: 10px;
+}
+.mobile_menu ul{
+    height: 100%;
+    justify-content: center;
+}
+.mobile_menu ul li{
+    margin:  10px 0;
+}
+.mobile_menu ul li a{
+    color: black;
+}
+div.show_menu {
+    
+   width: 80% !important;
+}
+/***/
+/* main */
  .main-wraper{
     align-items: stretch;
     justify-content: space-between;
-    gap: 50px;
+    gap: 3%;
 }
 .section_1{
     width: 75%;
@@ -98,14 +150,17 @@ picture img{
 .article{
     justify-content: space-between;
     height: auto;
-    padding:0 55px ;
     width: 45%;
 }
+/* button */
 .button{
     width: 150px;
     height: 50px;
 }
- 
+button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+/* aside */
 aside{
     padding: 0 2%;
     width: 30%;
@@ -118,18 +173,75 @@ aside h2{
     font-size: 38px;
     margin: 15px 0 ;
 }
-aside .info{
-    
+aside .info h3{
+    cursor: pointer;
 }
 
+
 .line{
-    content: '';
+   
     width: 100%;
     height: 1px;
     display: block;
     background-color: hsl(233, 8%, 79%);
     
-    
 }
+/***/
+.section_2{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+.section_2 > div{
+    height: 100%;
+}
+.section_2 img{
+    min-height: 150px;
+    width: 100px;
+    margin-right: 25px;
+    float: left;
+}
+.section_2 .description{
+    height: 100%;
+    width:200px;
+    float: left;
+}
+.section_2 .description span{
+    font-size: 28px;
+    color:hsl(233, 8%, 79%);
+    font-weight: 700;
+}
+@media screen and (max-width: 638px){
+    
+    .desktop_menu {
+        display: none;
+    }
+    .mobile_menu{
+        display: block;
+        cursor: pointer;
+    }
+    .flex-row{
+        flex-direction: column;
+        
+    }
+    .w50{
+        width:100%;
+        margin: 20px 2px;
 
+    }
+    picture{
+        width: 100%;
+    }
+    .article div{
+        margin: 10px  0;
+    }
+    aside{
+        width: 100%;
+        padding: 20px ;
+    }
+    .section_2 div{
+        margin: 15px 0;
 
+    }
+}
